@@ -1,14 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./courses.css";
 import { coursesCard } from "../../dummydata";
 
 const CoursesCard = () => {
+  const navigate = useNavigate(); 
   return (
     <>
       <section className="coursesCard">
         <div className="container grid2">
-          {coursesCard.map((val) => (
-            <div className="items">
+          {coursesCard.map((val, index) => (
+            <div className="items" key={val.id || index}>
               <div className="content flex">
                 <div className="left">
                   <div className="img">
@@ -17,37 +19,15 @@ const CoursesCard = () => {
                 </div>
                 <div className="text">
                   <h1>{val.coursesName}</h1>
-                  <div className="rate">
-                    <i className="fa fa-start"></i>
-                    <i className="fa fa-start"></i>
-                    <i className="fa fa-start"></i>
-                    <i className="fa fa-start"></i>
-                    <i className="fa fa-start"></i>
-                    <label htmlFor="">(5.0)</label>
-                  </div>
                   <div className="details">
-                    {val.courTeacher.map((details) => (
-                      <>
-                        <div className="box">
-                          <div className="dimg">
-                            <img src={details.dcover} alt="" />
-                          </div>
-                          <div className="para">
-                            <h4>{details.name}</h4>
-                          </div>
-                        </div>
-                        <span>{details.totalTime}</span>
-                      </>
+                    {val.courTeacher.map((details, index) => (
+                      <div key={index}>
+                      </div>
                     ))}
                   </div>
                 </div>
               </div>
-              <div className="price">
-                <h3>
-                  {val.priceAll} / {val.pricePer}
-                </h3>
-              </div>
-              <button className="outline-btn">ENROLL NOW !</button>
+              <button className="outline-btn" onClick={() => navigate(`/learn/${val.id || index}`)}>Start Learning</button>
             </div>
           ))}
         </div>

@@ -1,3 +1,4 @@
+
 .coursesCard {
   padding: 50px 0;
 }
@@ -12,14 +13,16 @@
   border-radius: 50%;
   background-color: #1eb2a6;
   padding: 15px;
+  margin: 10px;
 }
+
 .coursesCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .coursesCard .text {
-  margin-left: 15px;
+  margin: 15px;
   text-align: left;
 }
 .coursesCard .text h1 {
@@ -35,6 +38,9 @@
   font-size: 13px;
   margin-right: 5px;
 }
+/* div.items:nth-child(2) > div:nth-child(1){
+  margin: 20px;
+} */
 .coursesCard .details .dimg img {
   width: 50px;
   height: 50px;
