@@ -1,15 +1,18 @@
 /* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities'; */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@300;400;500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
+
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffffff;
 }
 /*------------global-----------*/
 .container {
@@ -40,6 +43,7 @@ a {
 }
 li {
   list-style-type: none;
+  text-decoration: none;
 }
 .row {
   width: 50%;
@@ -57,7 +61,7 @@ button {
   transition: 0.5s;
 }
 button i {
-  margin-left: 20px;
+  margin-left: 0;
 }
 button:hover {
   box-shadow: none;
@@ -89,9 +93,9 @@ p {
 }
 
 .back {
-  background-image: url("../public/images/cont.jpg");
+  background-image: url("../public/images/sunset.png");
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   position: absolute;
   top: 0;
   left: 0;
@@ -109,7 +113,7 @@ p {
 }
 .back h2 {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 57px;
   text-transform: uppercase;
 }
 .margin {
@@ -158,8 +162,8 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
   .back {
-    background-position: center;
+    background-position: left;
     padding-top: 50%;
-    height: 80vh;
+    height: 100vh;
   }
 }

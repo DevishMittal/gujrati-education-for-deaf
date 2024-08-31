@@ -8,26 +8,16 @@ const CoursesCard = () => {
   return (
     <>
       <section className="coursesCard">
-        <div className="container grid2">
+        <div className="container">
           {coursesCard.map((val, index) => (
-            <div className="items" key={val.id || index}>
-              <div className="content flex">
-                <div className="left">
-                  <div className="img">
-                    <img src={val.cover} alt="" />
-                  </div>
-                </div>
-                <div className="text">
-                  <h1>{val.coursesName}</h1>
-                  <div className="details">
-                    {val.courTeacher.map((details, index) => (
-                      <div key={index}>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <button className="outline-btn" onClick={() => navigate(`/learn/${val.id || index}`)}>Start Learning</button>
+            <div className="items" key={val.id || index} style={{ backgroundColor: val.cardBgColor }}>
+              <button
+                className="outline-btn"
+                style={{ backgroundColor: val.buttonColor }}
+                onClick={() => navigate(`/learn/${val.id || index}`)}
+              >
+                {val.buttonText}
+              </button>
             </div>
           ))}
         </div>

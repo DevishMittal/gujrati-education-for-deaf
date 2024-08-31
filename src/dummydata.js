@@ -8,13 +8,13 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Take Assessments",
+    title: "Assessments",
     desc: "Far far away, behind the word mountains,",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Convert Sign Language to Text",
+    title: "Sign Converter",
     desc: "Far far away, behind the word mountains",
   },
 ]
@@ -45,58 +45,34 @@ export const coursesCard = [
   {
     id: 1,
     cover: "../images/courses/c1.png",
-    coursesName: "English",
-    courTeacher: [
-      {
-        dcover: "./images/back.webp",
-        name: "by John Smith",
-        totalTime: "50 lectures (190 hrs)",
-      },
-    ],
-    priceAll: "$100 All Course",
-    pricePer: "$15 per month",
+    coursesName: "Course 1",
+    buttonText: "English",
+    cardBgColor: "#f9d6d8",
+    buttonColor: "#ff8c8c",
   },
   {
     id: 2,
     cover: "../images/courses/c2.png",
-    coursesName: "Mathematics",
-    courTeacher: [
-      {
-        dcover: "./images/back.webp",
-        name: "by Ram Gurung",
-        totalTime: "30 lectures (125 hrs)",
-      },
-    ],
-    priceAll: "$200 All Course",
-    pricePer: "$25 per month",
+    coursesName: "Course 2",
+    buttonText: "Maths",
+    cardBgColor: "#d6d8f9",
+    buttonColor: "#FF8A8A",
   },
   {
     id: 3,
     cover: "../images/courses/c3.png",
-    coursesName: "Science",
-    courTeacher: [
-      {
-        dcover: "./images/back.webp",
-        name: "by Saroj Nepal",
-        totalTime: "50 lectures (50 hrs)",
-      },
-    ],
-    priceAll: "$50 All Course",
-    pricePer: "$5 per month",
+    coursesName: "Course 3",
+    buttonText: "Science",
+    cardBgColor: "#f9d6d8",
+    buttonColor: "#FF8A8A",
   },
   {
     id: 4,
     cover: "../images/courses/c4.png",
     coursesName: "Gujarati",
-    courTeacher: [
-      {
-        dcover: "./images/back.webp",
-        name: "by Prabin Thapa Mager",
-        totalTime: "20 lectures (20 hrs)",
-      },
-    ],
-    priceAll: "$30 All Course",
-    pricePer: "$3 per month",
+    buttonText: "Gujarati",
+    cardBgColor: "#d6d8f9",
+    buttonColor: "#FF8A8A",
   },
 
 ]

@@ -19,6 +19,10 @@ import EnglishAlpha from "./components/allcourse/EnglishAlpha";
 import Fruits from "./components/allcourse/fruits";
 import Count from "./components/allcourse/Count";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Vegetables from "./components/allcourse/vegetables";
+import Addition from "./components/allcourse/addition";
+import Subtraction from "./components/allcourse/subtraction";
+import Birds from "./components/allcourse/birds";
  // New Component for the sections
 // import SectionDetail from "./components/SectionDetail"; // New Component for each section
 
@@ -37,9 +41,13 @@ function App() {
           <Route path="/learn/:courseId" element={<CourseSections />} />
           <Route path="/learn/4/Alphabets" element={<GujratiAlpha />}/>
           <Route path="/learn/1/alphabets" element={<EnglishAlpha />}/>
-          <Route path="/learn/3/animals" element={<Animals />}/>
+          <Route path="/learn/3/Land Animals" element={<Animals />}/>
+          <Route path="/learn/3/Birds" element={<Birds />}/>
           <Route path="/learn/1/fruits" element={<Fruits />}/>
+          <Route path="/learn/1/vegetables" element={<Vegetables />}/>
           <Route path="/learn/2/counting" element={<Count />}/>
+          <Route path="/learn/2/addition" element={<Addition />}/>
+          <Route path="/learn/2/subtraction" element={<Subtraction />}/>
           <Route path="/team" element={<Team />} />
           <Route path="/journal" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom';
 export default function App() {
   return (
     <MDBFooter className='bg-dark text-center text-white'>
-      <MDBContainer className='p-4 pb-0'>
-        <section className='mb-4'>
+      <MDBContainer className='p-3 pb-0'>
+        <section className='mb-3'>
           <MDBBtn outline color="light" floating className='m-1' role='button'>
             <Link to="/" >
             <MDBIcon fas icon="home" />
@@ -42,9 +42,9 @@ export default function App() {
         </section>
       </MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
         <p className='text-white'>
-          Learn Echo
+        SAHARO || સહારો
         </p>
       </div>
     </MDBFooter>
