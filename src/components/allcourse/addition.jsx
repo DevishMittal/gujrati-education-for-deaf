@@ -5,7 +5,7 @@ import b from "../../assets/images/add/five.jpg";
 import c from "../../assets/images/add/nin.jpg";
 import d from "../../assets/images/add/nine.jpg";
 import e from "../../assets/images/add/seven.jpg";
-
+import Back from "../common/back/Back";
 
 
 const images = [
@@ -19,6 +19,8 @@ const images = [
 
 const Addition = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">Addition</h1>
       <Carousel interval={null}> 
@@ -34,6 +36,7 @@ const Addition = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

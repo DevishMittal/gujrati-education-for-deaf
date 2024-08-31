@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import './courseSections.css'; // Make sure this is properly linked
-
+import Back from "../common/back/Back";
 // Define sections for each course
 const courseSections = {
   1: ["alphabets", "fruits", "vegetables"], // English sections
@@ -15,8 +15,10 @@ const CourseSections = () => {
   const sections = courseSections[courseId] || []; // Get sections based on courseId
 
   return (
+    <>
+    <Back />
     <div className="container my-5 sections-container">
-      <h1 className="text-center mb-4">Select a section to learn</h1>
+      <h1 className="text-center mb-4">Sections</h1>
       <div className="row justify-content-center">
         {sections.map((section, index) => (
           <div key={index} className="col-12 col-md-6 col-lg-5 mb-1 d-flex justify-content-center">
@@ -33,6 +35,7 @@ const CourseSections = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

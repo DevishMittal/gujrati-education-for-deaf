@@ -5,7 +5,7 @@ import b from "../../assets/images/subtract/five2.jpg";
 import c from "../../assets/images/subtract/four.jpg";
 import d from "../../assets/images/subtract/thre.jpg";
 import e from "../../assets/images/subtract/three.jpg";
-
+import Back from "../common/back/Back";
 
 
 const images = [
@@ -19,6 +19,8 @@ const images = [
 
 const Subtraction = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">Subtraction</h1>
       <Carousel interval={null}> 
@@ -34,6 +36,7 @@ const Subtraction = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

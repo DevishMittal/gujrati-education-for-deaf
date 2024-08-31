@@ -10,7 +10,7 @@ import g from "../../assets/images/counting/seven.jpg";
 import h from "../../assets/images/counting/eight.jpg";
 import i from "../../assets/images/counting/nine.jpg";
 import j from "../../assets/images/counting/zero.jpg";
-
+import Back from "../common/back/Back";
 
 
 const images = [
@@ -28,6 +28,8 @@ const images = [
 
 const Count = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">counting</h1>
       <Carousel interval={null}> 
@@ -43,6 +45,7 @@ const Count = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

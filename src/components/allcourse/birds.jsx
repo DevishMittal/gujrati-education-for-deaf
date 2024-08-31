@@ -16,7 +16,7 @@ import m from "../../assets/images/birds/touc.jpg";
 import n from "../../assets/images/birds/vul.jpg";
 import o from "../../assets/images/birds/wood.jpg";
 
-
+import Back from "../common/back/Back";
 
 const images = [
   { src: a, alt: "a", text: "a" },
@@ -38,6 +38,8 @@ const images = [
 
 const Birds = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">birds</h1>
       <Carousel interval={null}> 
@@ -53,6 +55,7 @@ const Birds = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

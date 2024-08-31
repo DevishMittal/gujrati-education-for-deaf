@@ -16,8 +16,7 @@ import m from "../../assets/images/vegetables/pea.jpg";
 import n from "../../assets/images/vegetables/po.jpg";
 import o from "../../assets/images/vegetables/pump.jpg";
 import p from "../../assets/images/vegetables/toma.jpg";
-
-
+import Back from "../common/back/Back";
 const images = [
   { src: a, alt: "a", text: "a" },
   { src: b, alt: "b", text: "b" },
@@ -39,6 +38,8 @@ const images = [
 
 const Vegetables = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">vegetables</h1>
       <Carousel interval={null}> 
@@ -54,6 +55,7 @@ const Vegetables = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

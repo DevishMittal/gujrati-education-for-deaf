@@ -33,7 +33,7 @@ import tha from "../../assets/images/GujuAlpha/tha.jpg";
 import tha2 from "../../assets/images/GujuAlpha/tha2.jpg";
 import va from "../../assets/images/GujuAlpha/va.jpg";
 import ya from "../../assets/images/GujuAlpha/ya.jpg";
-
+import Back from "../common/back/Back";
 const images = [
   { src: ka, alt: "ka", text: "Ka" },
   { src: kha, alt: "da", text: "Da" },
@@ -73,6 +73,8 @@ const images = [
 
 const GujratiAlpha = () => {
   return (
+    <>
+    <Back/> 
     <div className="container my-4">
       <h1 className="text-center mb-4">Learn Alphabets</h1>
       <Carousel interval={null}> 
@@ -88,6 +90,7 @@ const GujratiAlpha = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 

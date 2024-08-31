@@ -26,7 +26,7 @@ import w from "../../assets/images/EngAlpha/w.jpg";
 import x from "../../assets/images/EngAlpha/x.jpg";
 import y from "../../assets/images/EngAlpha/y.jpg";
 import z from "../../assets/images/EngAlpha/z.jpg";
-
+import Back from "../common/back/Back";
 const images = [
   { src: a, alt: "a", text: "a" },
   { src: b, alt: "b", text: "b" },
@@ -58,6 +58,8 @@ const images = [
 
 const EnglishAlpha = () => {
   return (
+    <>
+     <Back />
     <div className="container my-4">
       <h1 className="text-center mb-4">Learn Alphabets</h1>
       <Carousel interval={null}> 
@@ -73,6 +75,7 @@ const EnglishAlpha = () => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 
