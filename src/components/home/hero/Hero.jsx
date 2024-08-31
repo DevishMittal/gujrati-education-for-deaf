@@ -9,21 +9,11 @@ const Hero = () => {
         <div className="container">
           <div className="row">
             <Heading
-              subtitle="WELCOME TO ACADEMIA"
-              title="Best Online Education Expertise"
+              subtitle="WELCOME TO SilentEcho"
             />
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
+            Our educational app is designed to support individuals who are deaf or hard of hearing and those who are non-verbal, offering accessible and engaging learning resources tailored to their needs.
             </p>
-            <div className="button">
-              <button className="primary-btn">
-                GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i>
-              </button>
-              <button>
-                VIEW COURSE <i className="fa fa-long-arrow-alt-right"></i>
-              </button>
-            </div>
           </div>
         </div>
       </section>

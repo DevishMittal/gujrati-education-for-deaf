@@ -1,45 +1,17 @@
-.newletter {
-  background-color: #1eb2a6;
+/* .newletter {
+  background-color: #efc656;
   padding: 50px 0;
-  color: #fff;
-}
-.newletter .right,
-.newletter .left {
-  padding-right: 50px;
-}
-.newletter h1 {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.newletter .right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.newletter input {
-  width: 100%;
-  padding: 20px;
-  border: none;
-  outline: none;
-  height: 30px;
-}
-.newletter i {
-  padding: 12px;
-  color: #1eb2a6;
-  background-color: #fff;
-}
-footer {
-  background-color: #eeeeee;
-}
-footer .container {
-  display: grid;
-  grid-template-columns: 3fr 2fr 2fr 4fr 3fr;
-  grid-gap: 30px;
-}
-@media screen and (max-width: 768px) {
-  footer .container {
+  color: #ff8383;
+  font-family: 'Comic Sans MS', sans-serif; /* Fun, child-friendly font */
+  /* text-align: center;
+} */
+/* .ft {
+  flex-direction: column;
+  justify-content: center;
+} */ 
+
+/* @media screen and (max-width: 768px) { */
+  /* footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -109,4 +81,4 @@ footer .last i {
 }
 .legal i {
   color: #1eb2a6;
-}
+} */

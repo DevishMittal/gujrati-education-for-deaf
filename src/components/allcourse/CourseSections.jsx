@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
+import './courseSections.css'; // Make sure this is properly linked
 
 // Define sections for each course
 const courseSections = {
   1: ["alphabets", "fruits", "vegetables"], // English sections
-  2: ["counting", "addition", "subtraction", "multiplication", "division", "tables"], // Maths sections
-  3: ["plants", "animals", "earth", "space"], // Science sections
+  2: ["counting", "addition", "subtraction"], // Maths sections
+  3: ["Birds", "Land Animals"], // Science sections
   4: ["Alphabets"],
 };
 
@@ -14,17 +15,23 @@ const CourseSections = () => {
   const sections = courseSections[courseId] || []; // Get sections based on courseId
 
   return (
-    <div className="sections">
-      <h1>Select a section to learn</h1>
-      <ul>
+    <div className="container my-5 sections-container">
+      <h1 className="text-center mb-4">Select a section to learn</h1>
+      <div className="row justify-content-center">
         {sections.map((section, index) => (
-          <li key={index}>
-            <Link to={`/learn/${courseId}/${section}`}>
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          </li>
+          <div key={index} className="col-12 col-md-6 col-lg-5 mb-1 d-flex justify-content-center">
+            <div className="card section-card text-center shadow-sm">
+              <div className="card-body">
+                <Link to={`/learn/${courseId}/${section}`} className="section-link">
+                  <h1 className="section-title">
+                    {section.charAt(0).toUpperCase() + section.slice(1)}
+                  </h1>
+                </Link>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

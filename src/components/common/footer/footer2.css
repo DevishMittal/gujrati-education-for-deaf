@@ -1,0 +1,147 @@
+/* Newsletter Section */
+.newletter {
+  background-color: #efc656; /* Bright yellow for a cheerful look */
+  padding: 50px 0;
+  color: #fff;
+  font-family: 'Comic Sans MS', sans-serif; /* Fun, child-friendly font */
+  text-align: center; /* Centered text for a more inviting look */
+}
+
+.newletter .right,
+.newletter .left {
+  padding-right: 50px;
+}
+
+.newletter h1 {
+  color: #fff;
+  font-size: 36px; /* Larger font size for emphasis */
+  font-weight: 700; /* Bold for visibility */
+  margin-bottom: 15px;
+}
+
+.newletter .right {
+  display: flex;
+  justify-content: center; /* Centered alignment */
+  align-items: center;
+  flex-direction: column; /* Stacked elements */
+}
+
+.newletter input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #fff; /* White border for contrast */
+  outline: none;
+  height: 40px; /* Taller input for ease of use */
+  border-radius: 20px; /* Rounded corners for a softer look */
+  margin-bottom: 10px;
+}
+
+.newletter i {
+  padding: 12px;
+  color: #d03232; /* Bright red for contrast */
+  background-color: #fff;
+  border-radius: 50%; /* Circular icon for a playful touch */
+}
+
+/* Footer Section */
+footer {
+  background-color: #f7f7f7; /* Light grey for a clean look */
+  padding: 50px 0;
+  font-family: 'Comic Sans MS', sans-serif; /* Consistent font */
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Responsive grid */
+  grid-gap: 20px;
+  padding: 0 20px;
+}
+
+footer .logo span {
+  color: #f1cb64; /* Yellow color to match the theme */
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+footer .logo p {
+  color: #666; /* Darker grey for contrast */
+  margin: 20px 0 10px 0;
+}
+
+footer .logo .icon {
+  background-color: #e9c45c; /* Yellow background for consistency */
+  color: white;
+  margin-right: 10px;
+  border-radius: 50%; /* Circular icon for a friendly look */
+}
+
+footer h3 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 24px; /* Larger font size for prominence */
+  color: #333; /* Dark grey for contrast */
+}
+
+footer ul li {
+  margin-bottom: 15px;
+  font-size: 16px; /* Larger font size for readability */
+}
+
+footer .link li::before {
+  content: "→"; /* Use a simple arrow */
+  color: #e8be4c; /* Yellow for consistency */
+  margin-right: 5px;
+}
+
+footer .items {
+  margin-bottom: 30px;
+}
+
+footer .items img {
+  width: 60px; /* Slightly larger for visibility */
+  height: 60px;
+  border-radius: 10px; /* Rounded corners for a friendly look */
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+footer .items span,
+footer .items i {
+  font-size: 14px; /* Larger font size for better readability */
+  color: #1eb2a6; /* Teal color for contrast */
+  margin-right: 5px;
+  text-transform: capitalize;
+}
+
+footer h4 {
+  font-weight: 400;
+  margin-top: 5px;
+  color: #333; /* Dark grey for contrast */
+}
+
+footer .last ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjusted margin for spacing */
+}
+
+footer .last i {
+  width: 50px; /* Adjusted icon size */
+  font-size: 24px;
+  color: #1eb2a6; /* Teal for consistency */
+}
+
+/* Legal Section */
+.legal {
+  text-align: center;
+  padding: 30px 0;
+  color: #666; /* Dark grey for better readability */
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.legal p {
+  font-size: 16px; /* Larger font size for readability */
+}
+
+.legal i {
+  color: #1eb2a6; /* Teal for consistency */
+}

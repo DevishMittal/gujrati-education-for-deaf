@@ -15,9 +15,10 @@ import Quiz from "./components/assesment/sections";
 import Animals from "./components/allcourse/Animals";
 import Team from "./components/team/Team";
 import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import EnglishAlpha from "./components/allcourse/EnglishAlpha";
-
+import Fruits from "./components/allcourse/fruits";
+import Count from "./components/allcourse/Count";
+import 'bootstrap/dist/css/bootstrap.min.css';
  // New Component for the sections
 // import SectionDetail from "./components/SectionDetail"; // New Component for each section
 
@@ -37,7 +38,8 @@ function App() {
           <Route path="/learn/4/Alphabets" element={<GujratiAlpha />}/>
           <Route path="/learn/1/alphabets" element={<EnglishAlpha />}/>
           <Route path="/learn/3/animals" element={<Animals />}/>
-          {/* <Route path="/learn/Maths" element={<SectionDetail />} /> */}
+          <Route path="/learn/1/fruits" element={<Fruits />}/>
+          <Route path="/learn/2/counting" element={<Count />}/>
           <Route path="/team" element={<Team />} />
           <Route path="/journal" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />

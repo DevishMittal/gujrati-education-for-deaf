@@ -2,20 +2,20 @@ export const homeAbout = [
   {
     id: 1,
     cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
-    title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Take Courses",
+    desc: "Learn from photos",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/diploma.png",
-    title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Take Assessments",
+    desc: "Far far away, behind the word mountains,",
   },
   {
     id: 1,
     cover: "https://img.icons8.com/ios/80/000000/athlete.png",
-    title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    title: "Convert Sign Language to Text",
+    desc: "Far far away, behind the word mountains",
   },
 ]
 export const awrapper = [
@@ -98,76 +98,7 @@ export const coursesCard = [
     priceAll: "$30 All Course",
     pricePer: "$3 per month",
   },
-  // {
-  //   id: 5,
-  //   cover: "../images/courses/c5.png",
-  //   coursesName: "Introducing to Programming with ReactJS",
-  //   courTeacher: [
-  //     {
-  //       dcover: "./images/back.webp",
-  //       name: "by Sunil Bishowkaram",
-  //       totalTime: "100 lectures (150 hrs)",
-  //     },
-  //   ],
-  //   priceAll: "$300 All Course",
-  //   pricePer: "$30 per month",
-  // },
-  // {
-  //   id: 6,
-  //   cover: "../images/courses/c6.png",
-  //   coursesName: "Learn Frontend Programming Language",
-  //   courTeacher: [
-  //     {
-  //       dcover: "./images/back.webp",
-  //       name: "by Sunil Bishowkaram",
-  //       totalTime: "200 lectures (300 hrs)",
-  //     },
-  //   ],
-  //   priceAll: "$500 All Course",
-  //   pricePer: "$80 per month",
-  // },
-  // {
-  //   id: 7,
-  //   cover: "../images/courses/c7.png",
-  //   coursesName: "Introducing to with HTML / CSS",
-  //   courTeacher: [
-  //     {
-  //       dcover: "./images/back.webp",
-  //       name: "by Price",
-  //       totalTime: "20 lectures (50 hrs)",
-  //     },
-  //   ],
-  //   priceAll: "$20 All Course",
-  //   pricePer: "$2 per month",
-  // },
-  // {
-  //   id: 8,
-  //   cover: "../images/courses/c8.png",
-  //   coursesName: "Introducing to with JAVA",
-  //   courTeacher: [
-  //     {
-  //       dcover: "./images/back.webp",
-  //       name: "by Petter",
-  //       totalTime: "80 lectures (200 hrs)",
-  //     },
-  //   ],
-  //   priceAll: "$200 All Course",
-  //   pricePer: "$40 per month",
-  // },
-  // {
-  //   id: 9,
-  //   cover: "../images/courses/c9.png",
-  //   coursesName: "Introducing to with HTML / CSS / JAVASCRIPT",
-  //   courTeacher: [
-  //     {
-  //       dcover: "./images/back.webp",
-  //       name: "by Petter",
-  //       totalTime: "50 lectures (50 hrs)",
-  //     },
-  //   ],
-  //   priceAll: "$20 All Course",
-  //   pricePer: "$3 per month",
-  // },
+
 ]
 export const online = [
   // {
@@ -280,6 +211,7 @@ export const team = [
     work: "DEVELOPER AND LEAD INSTRUCTOR",
   },
   {
+    
     cover: "./images/team/t8.webp",
     name: "Ph.D Brian Wooden",
     work: "DEVELOPER AND LEAD INSTRUCTOR",

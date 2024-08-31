@@ -1,0 +1,116 @@
+/* General Styles for the Hero Section */
+.hero {
+  background-color: #fff7e0; /* Soft yellow background */
+  background-image: url('/public/images/kidsbg.png'); /* Correct path for the image in the public folder */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 10% 0;
+  color: #f7b500; /* Bright yellow-orange color for text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Optional: Add an overlay for better text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading Styles */
+.hero h3 {
+  color: #f7b500; /* Match the text color */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  color: #f7b500; /* Match the text color */
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Container Styling */
+.hero .container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Row Styling */
+.hero .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Styling */
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.primary-btn,
+.secondary-btn {
+  background-color: #f7b500; /* Yellow-orange color */
+  color: rgb(242, 240, 240);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 30px; /* Rounded buttons */
+  margin:  10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+}
+
+.secondary-btn {
+  background-color: white;
+  color: #f7b500;
+  border: 2px solid #f7b500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 30%;
+    height: auto;
+  }
+  .hero h3 {
+    font-size: 2em;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .primary-btn,
+  .secondary-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+  .hero .hero-image img {
+    max-width: 200px;
+  }
+}

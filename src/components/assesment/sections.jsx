@@ -1,75 +1,102 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Back from "../common/back/Back";
+import a from "../../assets/images/quiz1/a.png"
+import b from "../../assets/images/quiz1/b.png"
+import f from "../../assets/images/quiz1/f.png"
+import g from "../../assets/images/quiz1/g.png"
+import e from "../../assets/images/quiz1/e.png"
+import m from "../../assets/images/quiz1/m.png"
+import apple from "../../assets/images/quiz1/apple.svg"
+import banana from "../../assets/images/quiz1/banan.png"
+import one from "../../assets/images/quiz1/1.svg"
+import zero from "../../assets/images/quiz1/0.svg"
+import three from "../../assets/images/quiz1/3.svg"
+import five from "../../assets/images/quiz1/5.svg"
+import six from "../../assets/images/quiz1/6.svg"
+import eight from "../../assets/images/quiz1/8.svg"
+import donkey from "../../assets/images/quiz1/donkey.png"
+import dog from "../../assets/images/quiz1/dog.svg"
+import rabit from "../../assets/images/quiz1/rabit.png"
+import zebra from "../../assets/images/quiz1/zebra.svg"
+import bear from "../../assets/images/quiz1/bear.webp"
+import camel from "../../assets/images/quiz1/camel.png"
+import ka from "../../assets/images/quiz1/ka.png"
+import dha from "../../assets/images/quiz1/dha.jpg"
+import ga from "../../assets/images/quiz1/ga.jpg"
+import jha from "../../assets/images/quiz1/jha.jpg"
+import na from "../../assets/images/quiz1/na.jpg"
+import tha from "../../assets/images/quiz1/tha.jpg"
 
-// Example questions for each level and category
+
 const questions = {
     english: {
       easy: [
-        { question: "What is the past tense of 'go'?", options: ["Went", "Goed"], answer: "Went" },
-        { question: "Which of these is a noun?", options: ["Run", "Cat"], answer: "Cat" },
-        { question: "Choose the correct spelling.", options: ["Receive", "Recieve"], answer: "Receive" },
+        { question: "A", options: [{ text:"1.",image:a},{text:"2.",image:b}], answer: "1." },
+        { question: "F", options: [{ text:"1.",image:g},{text:"2.",image:f}], answer: "2." },
+        { question: "M", options: [{ text:"1.",image:e},{text:"2.",image:m}], answer: "2." },
       ],
       medium: [
-        { question: "What is a synonym for 'happy'?", options: ["Sad", "Joyful"], answer: "Joyful" },
-        { question: "Which sentence is correct?", options: ["I is happy.", "I am happy."], answer: "I am happy." },
-        { question: "What is the antonym of 'bright'?", options: ["Dark", "Light"], answer: "Dark" },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
       ],
       hard: [
-        { question: "What is a metaphor?", options: ["A direct comparison", "A figure of speech"], answer: "A figure of speech" },
-        { question: "What is a hyperbole?", options: ["Exaggeration", "Understatement"], answer: "Exaggeration" },
-        { question: "Who wrote 'Hamlet'?", options: ["Shakespeare", "Dickens"], answer: "Shakespeare" },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
+        { question: "Apple", options: [{ text:"1.",image:apple},{text:"2.",image:banana}], answer: "1." },
       ],
     },
     maths: {
       easy: [
-        { question: "What is 5 + 3?", options: ["8", "7"], answer: "8" },
-        { question: "What is 10 - 4?", options: ["6", "5"], answer: "6" },
-        { question: "What is 2 x 2?", options: ["4", "5"], answer: "4" },
+        { question: "[1]", options: [{ text:"1.",image:one},{text:"2.",image:zero}], answer: "1." },
+        { question: "[3]", options: [{ text:"1.",image:three},{text:"2.",image:five}], answer: "1." },
+        { question: "[8]", options: [{ text:"1.",image:six},{text:"2.",image:eight}], answer: "2." },
       ],
       medium: [
-        { question: "What is 12 ÷ 4?", options: ["3", "4"], answer: "3" },
-        { question: "What is the square root of 49?", options: ["7", "6"], answer: "7" },
-        { question: "What is 15% of 200?", options: ["30", "20"], answer: "30" },
+        { question: "[8]", options: [{ text:"1.",image:six},{text:"2.",image:eight}], answer: "2." },
+        { question: "[1]", options: [{ text:"1.",image:one},{text:"2.",image:zero}], answer: "1." },
+        { question: "[3]", options: [{ text:"1.",image:three},{text:"2.",image:five}], answer: "1." },
       ],
       hard: [
-        { question: "What is the value of π?", options: ["3.14", "2.14"], answer: "3.14" },
-        { question: "Solve for x: 2x = 10", options: ["5", "10"], answer: "5" },
-        { question: "What is the derivative of x²?", options: ["2x", "x"], answer: "2x" },
+        { question: "[3]", options: [{ text:"1.",image:three},{text:"2.",image:five}], answer: "1." },
+        { question: "[1]", options: [{ text:"1.",image:one},{text:"2.",image:zero}], answer: "1." },
+        { question: "[8]", options: [{ text:"1.",image:six},{text:"2.",image:eight}], answer: "2." },
       ],
     },
     science: {
       easy: [
-        { question: "What planet is closest to the sun?", options: ["Mercury", "Venus"], answer: "Mercury" },
-        { question: "What is H2O?", options: ["Water", "Hydrogen"], answer: "Water" },
-        { question: "What do plants need to make food?", options: ["Sunlight", "Moonlight"], answer: "Sunlight" },
+        { question: "dog", options: [{ text:"1.",image:bear},{text:"2.",image:dog}], answer: "2." },
+        { question: "zebra", options: [{ text:"1.",image:zebra},{text:"2.",image:camel}], answer: "1." },
+        { question: "rabit", options: [{ text:"1.",image:rabit},{text:"2.",image:zebra}], answer: "1." },
       ],
       medium: [
-        { question: "What gas do humans breathe in?", options: ["Oxygen", "Carbon Dioxide"], answer: "Oxygen" },
-        { question: "What is the chemical symbol for gold?", options: ["Au", "Ag"], answer: "Au" },
-        { question: "What is the powerhouse of the cell?", options: ["Mitochondria", "Nucleus"], answer: "Mitochondria" },
+        { question: "zebra", options: [{ text:"1.",image:zebra},{text:"2.",image:camel}], answer: "1." },
+        { question: "rabit", options: [{ text:"1.",image:rabit},{text:"2.",image:zebra}], answer: "1." },
+        { question: "dog", options: [{ text:"1.",image:bear},{text:"2.",image:dog}], answer: "2." },
       ],
       hard: [
-        { question: "What is the speed of light?", options: ["299,792 km/s", "300,000 km/s"], answer: "299,792 km/s" },
-        { question: "What is Newton's third law?", options: ["Action and reaction", "Force and mass"], answer: "Action and reaction" },
-        { question: "What is the boiling point of water in Celsius?", options: ["100°C", "90°C"], answer: "100°C" },
+        { question: "dog", options: [{ text:"1.",image:bear},{text:"2.",image:dog}], answer: "2." },
+        { question: "zebra", options: [{ text:"1.",image:zebra},{text:"2.",image:camel}], answer: "1." },
+        { question: "rabit", options: [{ text:"1.",image:rabit},{text:"2.",image:zebra}], answer: "1." },
       ],
     },
     gujarati: {
       easy: [
-        { question: "What is the Gujarati word for 'Hello'?", options: ["Kem Cho", "Namaste"], answer: "Kem Cho" },
-        { question: "Translate 'Pani' to English.", options: ["Water", "Milk"], answer: "Water" },
-        { question: "What is the Gujarati script called?", options: ["Gujarati", "Devanagari"], answer: "Gujarati" },
+        { question: "ka", options: [{ text:"1.",image:ka},{text:"2.",image:dha}], answer: "1." },
+        { question: "ga", options: [{ text:"1.",image:ga},{text:"2.",image:na}], answer: "1." },
+        { question: "jha", options: [{ text:"1.",image:tha},{text:"2.",image:jha}], answer: "2." },
       ],
       medium: [
-        { question: "What is the Gujarati word for 'Food'?", options: ["Khana", "Roti"], answer: "Khana" },
-        { question: "Translate 'Manav' to English.", options: ["Human", "Animal"], answer: "Human" },
-        { question: "What is the Gujarati word for 'Book'?", options: ["Pustak", "Kitab"], answer: "Pustak" },
+        { question: "ga", options: [{ text:"1.",image:ga},{text:"2.",image:na}], answer: "1." },
+        { question: "jha", options: [{ text:"1.",image:dha},{text:"2.",image:jha}], answer: "2." },
+        { question: "ka", options: [{ text:"1.",image:ka},{text:"2.",image:dha}], answer: "1." },
       ],
       hard: [
-        { question: "Who wrote 'Saraswatichandra'?", options: ["Govardhanram Tripathi", "Narmad"], answer: "Govardhanram Tripathi" },
-        { question: "Translate 'Ghar' to English.", options: ["Home", "Garden"], answer: "Home" },
-        { question: "What is the Gujarati word for 'Peace'?", options: ["Shanti", "Yudh"], answer: "Shanti" },
+        { question: "jha", options: [{ text:"1.",image:dha},{text:"2.",image:jha}], answer: "2." },
+        { question: "ka", options: [{ text:"1.",image:ka},{text:"2.",image:dha}], answer: "1." },
+        { question: "ga", options: [{ text:"1.",image:ga},{text:"2.",image:na}], answer: "1." },
       ],
     }
   };
@@ -96,6 +123,8 @@ const questions = {
     };
   
     return (
+      <>
+      <Back title="Assessment" />
       <div className="container my-4">
         {!completed ? (
           <div className="quiz-card p-4">
@@ -106,10 +135,13 @@ const questions = {
             {questions[category][level][currentQuestion].options.map((option, index) => (
               <button
                 key={index}
-                onClick={() => handleAnswer(option)}
+                onClick={() => handleAnswer(option.text)}
                 className="btn btn-outline-primary d-block w-100 mb-2"
               >
-                {option}
+                {option.image ? (
+                  <img src={option.image} alt={option.text} style={{ maxWidth: '50px', marginRight: '10px' }} />
+                ) : null}
+                {option.text}
               </button>
             ))}
             <div className="text-muted mt-3">{currentQuestion + 1} of {questions[category][level].length}</div>
@@ -122,6 +154,7 @@ const questions = {
           </div>
         )}
       </div>
+      </>
     );
   };
   

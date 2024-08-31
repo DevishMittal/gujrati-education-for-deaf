@@ -14,8 +14,8 @@ const AboutCard = () => {
           </div>
           <div className="right row">
             <Heading
-              subtitle="LEARN ANYTHING"
-              title="Benefits About Online Learning Expertise"
+              subtitle="LEARN Visually"
+              // title="Benefits About Online Learning Expertise"
             />
             <div className="items">
               {homeAbout.map((val) => {

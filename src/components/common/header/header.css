@@ -68,7 +68,7 @@ header ul li a:hover {
     top: -20px;
   }
   .mobile-nav {
-    position: absolute;
+    /* position: absolute; */
     top: 7vh;
     left: 0;
     width: 100%;

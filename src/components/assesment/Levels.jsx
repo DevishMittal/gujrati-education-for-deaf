@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Back from "../common/back/Back";
 const levels = ["Easy", "Medium", "Hard"];
 
 const Levels = () => {
@@ -9,6 +9,8 @@ const Levels = () => {
   const { category } = useParams();
 
   return (
+    <>
+    <Back title="Assessment" />
     <div className="container my-4">
       <h2 className="text-center mb-4">{category} - Select Difficulty Level</h2>
       <div className="row">
@@ -28,6 +30,7 @@ const Levels = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
