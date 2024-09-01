@@ -7,7 +7,7 @@
   }
   
   .btn {
-    background-color: #e9ec31 !important;
+    background-color: #25bff7 !important;
     color: #fff !important;
     border-radius: 50px !important;
     padding: 10px 20px !important;
@@ -72,7 +72,8 @@
   color: #ff6347 !important;
   font-weight: bold !important;
   margin-top: 10px !important;
-  font-size: 1.2rem !important;
+  font-size: 1.2rem !important
+  ;
 }
 
 /* Responsive adjustments */

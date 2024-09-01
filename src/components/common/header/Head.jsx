@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Logo } from "../../../assets/patterns/logo.svg"; // Adjust the path as needed
-
+// import lg from "../../../assets/patterns/translogo.png"
 const Head = () => {
   const logoStyle = {
     width: "80px",  // Adjust width as needed

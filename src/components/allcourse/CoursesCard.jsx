@@ -4,15 +4,19 @@ import "./courses.css";
 import { coursesCard } from "../../dummydata";
 
 const CoursesCard = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
     <>
-      <section className="coursesCard">
-        <div className="container">
+      <section className="courses">
+        <div className="courses__container">
           {coursesCard.map((val, index) => (
-            <div className="items" key={val.id || index} style={{ backgroundColor: val.cardBgColor }}>
+            <div 
+              className="courses__item" 
+              key={val.id || index} 
+              style={{ backgroundColor: val.cardBgColor }}
+            >
               <button
-                className="outline-btn"
+                className="courses__button"
                 style={{ backgroundColor: val.buttonColor }}
                 onClick={() => navigate(`/learn/${val.id || index}`)}
               >
