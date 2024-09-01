@@ -18,7 +18,6 @@ import React from "react";
 import EnglishAlpha from "./components/allcourse/EnglishAlpha";
 import Fruits from "./components/allcourse/fruits";
 import Count from "./components/allcourse/Count";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Vegetables from "./components/allcourse/vegetables";
 import Addition from "./components/allcourse/addition";
 import Subtraction from "./components/allcourse/subtraction";

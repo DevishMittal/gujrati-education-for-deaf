@@ -127,7 +127,7 @@ const questions = {
       <Back title="Assessment" />
       <div className="container my-4">
         {!completed ? (
-          <div className="quiz-card p-4">
+          <div className="quizz-card p-4">
             <h3 className="mb-3">Take the Quiz</h3>
             <h5 className="mb-3">
               {currentQuestion + 1}. {questions[category][level][currentQuestion].question}

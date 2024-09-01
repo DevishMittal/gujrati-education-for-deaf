@@ -1,19 +1,19 @@
 export const homeAbout = [
   {
     id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+    cover: "../images/download-removebg-preview.png",
     title: "Take Courses",
     desc: "Learn from photos",
   },
   {
     id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
+    cover: "../images/3-removebg-preview.png",
     title: "Assessments",
     desc: "Far far away, behind the word mountains,",
   },
   {
     id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+    cover: "../images/convertion.svg",
     title: "Sign Converter",
     desc: "Far far away, behind the word mountains",
   },

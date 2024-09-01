@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Back from "../common/back/Back";
+import './Levels.css'; // Import the custom CSS file
+
 const levels = ["Easy", "Medium", "Hard"];
 
 const Levels = () => {
@@ -10,26 +11,21 @@ const Levels = () => {
 
   return (
     <>
-    <Back title="Assessment" />
-    <div className="container my-4">
-      <h2 className="text-center mb-4">{category} - Select Difficulty Level</h2>
-      <div className="row">
-        {levels.map((level, index) => (
-          <div 
-            key={index} 
-            className="col-12 col-md-6 col-lg-4 mb-4"
-            onClick={() => navigate(`/quiz/${category}/${level.toLowerCase()}`)}
-            style={{ cursor: 'pointer' }}
-          >
-            <div className="card text-center shadow-sm">
-              <div className="card-body">
-                <h5 className="card-title">{level}</h5>
-              </div>
+      <Back />
+      <div className="levels">
+        <h2 className="levels__title">Select Difficulty Level</h2>
+        <div className="levels__grid">
+          {levels.map((level, index) => (
+            <div 
+              key={index} 
+              className="levels__card" 
+              onClick={() => navigate(`/quiz/${category}/${level.toLowerCase()}`)}
+            >
+              <h5 className="levels__card-title">{level}</h5>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };

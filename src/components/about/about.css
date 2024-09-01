@@ -33,7 +33,7 @@
 }
 
 .aboutHome .item:hover {
-  background-color: #ff7f4d; /* Cheerful hover background */
+  background-color: #f892a2; /* Cheerful hover background */
   color: #fff;
   cursor: pointer;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
