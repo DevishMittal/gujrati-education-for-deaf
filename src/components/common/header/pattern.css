@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+pattern-top{
+background-image: url('../../../assets/patterns/pattern.jpg'); /* Replace with the path to your top pattern */
+background-repeat: no-repeat;
+background-size: cover;
+height: 500px; /* Adjust the height as needed */
+width: 100%;
+}
+}

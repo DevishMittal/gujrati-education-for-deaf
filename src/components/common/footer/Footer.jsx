@@ -1,24 +1,52 @@
-import React from "react";
-import { blog } from "../../../dummydata";
-import "./footer.css";
+import React from 'react';
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBCol,
+  MDBRow,
+  MDBIcon,
+  MDBBtn
+} from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
-const Footer = () => {
+export default function App() {
   return (
-    <>
-      <section className="newletter">
-        <div className="container flexSB">
-          <div className="left row">
-            <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
-          </div>
-          <div className="right row">
-            <input type="text" placeholder="Enter email address" />
-            <i className="fa fa-papper-plane"></i>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
+    <MDBFooter className='bg-dark text-center text-white'>
+      <MDBContainer className='p-3 pb-0'>
+        <section className='mb-3'>
+          <MDBBtn outline color="light" floating className='m-1' role='button'>
+            <Link to="/" >
+            <MDBIcon fas icon="home" />
+            </Link>
+          
+          </MDBBtn>
 
-export default Footer;
+          <MDBBtn outline color="light" floating className='m-1' role='button'>
+            <Link to="/courses">
+            <MDBIcon fas icon="book-open" />
+            </Link>
+          
+          </MDBBtn>
+          <MDBBtn outline color="light" floating className='m-1' role='button'>
+          <Link to="/assessment">
+          <MDBIcon fas icon="question-circle" />
+          </Link>
+      
+          </MDBBtn>
+          <MDBBtn outline color="light" floating className='m-1' role='button'>
+            <Link to="/Contact">
+            <MDBIcon fas icon="phone-alt" />
+            </Link>
+          
+          </MDBBtn>
+        </section>
+      </MDBContainer>
+
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 1)' }}>
+        <p className='text-white'>
+        SAHARO || સહારો
+        </p>
+      </div>
+    </MDBFooter>
+  );
+}

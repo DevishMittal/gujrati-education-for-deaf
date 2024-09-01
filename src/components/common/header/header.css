@@ -1,10 +1,16 @@
 /*--------head------------*/
 .head {
-  padding: 20px 0;
-  color: #fff;
+  padding: 8px 0;
+  color: transparent; /* Make text color transparent to show gradient */
+  background: linear-gradient(to right, #97e1bc 67%, #d33535 50%); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* Standard property for background clipping */
+  font-size: 38px; /* Adjust font size as needed */
+  font-weight: 900; /* Adjust font weight as needed */
 }
+
 .logo h1 {
-  font-size: 35px;
+  font-size: 22px;
   font-weight: 900;
 }
 .head .icon {
@@ -48,7 +54,7 @@ header ul li a:hover {
     clip-path: none;
   }
   header {
-    margin: 0;
+    margin: 20px;
     background-color: #1eb2a6;
     position: relative;
   }
@@ -65,13 +71,14 @@ header ul li a:hover {
     font-size: 30px;
     position: absolute;
     right: 0;
-    top: -20px;
+    top: -15px;
   }
   .mobile-nav {
     position: absolute;
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color: #1eb2a6;
+    background-color: #FF8A8A;
+    z-index: 2;
   }
 }
