@@ -1,6 +1,6 @@
 .hero {
   background-image: url("../../../../public/images/kidsbg2.png");
-  background-size:200% 100%;
+  background-size:100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
@@ -15,32 +15,6 @@
   overflow: hidden;
   opacity: 1;
 }
-
-.hero #heading h3 {
-  color: #5cace1;
-}
-.hero #heading {
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-.link-button-link{
-  border-radius: 25px; /* Rounded corners for the button */
-  font-size: 18px; /* Larger font size for better readability */
-  padding: 10px 10px; /* Add padding to make the button larger */
-  margin: 20px 0; /* Margin for spacing */
-  border: none;
-  background-color: #bbf588; /* Cheerful yellow color */
-  color: #fe8564; /* White text color */
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
-  transition: background-color 0.3s, transform 0.3s; 
-  margin-top: 20px !important;
-  width: 65% !important;/* Smooth transitions */
-  margin-left: 40px;
-  font-weight: 500;
-  text-decoration: none;
-}
 @media screen and (max-width: 768px) {
   .margin {
     height: 0vh;
@@ -49,6 +23,10 @@
     background-position: right;
     padding-top: 65%;
     height: 100vh;
+    background-size:200% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
   }
   .hero .row {
     width: 100%;
@@ -56,3 +34,9 @@
  
 }
 
+@media screen and (min-width: 1024px) {
+  .hero{
+    background-size:100% 120%;
+  }
+  
+}

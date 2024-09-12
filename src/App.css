@@ -95,7 +95,8 @@ p {
 .back {
   background-image: url("../public/images/sunset.png");
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
